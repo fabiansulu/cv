@@ -1,0 +1,367 @@
+body {
+  color: #40514e;
+  font-family: "Montserrat";
+}
+a {
+  color: #4d616e;
+}
+hr {
+  border: dotted 6px;
+  border-bottom: none;
+  border-color: #eaf6f6;
+  width: 4%;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  color: #2e2e2e;
+  font-family: "Montserrat-bold";
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/****** Top*/
+
+/* Navigation Bar */
+
+.navbar_fixed{
+    position: fixed;
+    padding: 0.3% 10%;
+    
+    top: -1px;
+    left: 0; right: 0;
+    background: #333;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 0.5s ease;
+    color: white;
+}
+
+.nav-link {
+  margin: auto 10px;
+  color: #4d616e;
+}
+
+.nav-link:hover,
+.fab:hover {
+  color: #fff;
+}
+
+/* Banner */
+
+
+#top {
+  background-color: #2e2e2e;
+  padding: 3% 10% 0 10%;
+  color: #f4eee0;
+}
+
+.banner {
+  margin-top: 2%;
+}
+.whoami {
+  font-size: 4.5rem;
+  font-family: "Montserrat-Bold";
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+.k {
+  text-decoration: underline;
+}
+
+.wrapper {
+    color: #fff;
+    position : absolute;
+    width : 100%;
+    left : 10%;
+  }
+  
+.wrapper span {
+    color: #ED2B2A;
+    font-size : 50px;
+    font-weight : 500;
+    line-height : 1.5;
+    font-family: "Montserrat-Black";
+  }
+.multiText {
+    font-weight : 800;
+    color : #00a2ed;
+    
+  }
+
+
+.description {
+  text-transform: normal;
+  color: greenyellow;
+  font-family: "Montserrat-black";
+  font-size: 30px;
+}
+
+.image-banner {
+  float: right;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.button-banner {
+  margin-top: 8%;
+}
+
+.btn-banner {
+  margin: 0 5% 5% 0;
+}
+
+.fab {
+    padding-top: 10%;
+  padding-right: 5%;
+  color: #f4eee0;
+}
+.fab:hover {
+  color: #ED2B2A;
+}
+
+/******  Middle Section */
+#middle {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 7% 10%;
+}
+
+/* Skills area */
+
+#skills {
+  text-align: center;
+  display: inline-block;
+}
+
+.row-skills {
+  margin: 5% auto;
+  text-align: center;
+}
+
+.para-skills {
+  line-height: 2;
+}
+
+.icon-skills {
+  margin: 5% 0 5%;
+  color: #333;
+}
+
+.icon-skills:hover {
+  color: #ED2B2A;
+}
+
+.skills-widget {
+  padding: 20px;
+}
+
+/*  About area */
+
+#about {
+  margin: 5% auto;
+}
+
+.me-description {
+  margin: 5% auto;
+  line-height: 2;
+}
+
+#about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.webdev,
+.cs,
+.training {
+  margin: 50px auto;
+  width: 80%;
+  padding-bottom: 20px;
+  line-height: 2;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.para-about {
+  margin-top: 30px;
+}
+#about .webdev img,
+#about .training img {
+  float: left;
+}
+
+#about .cs img {
+  float: right;
+}
+
+/* Project Area*/
+
+
+#projects {
+    margin: 100px auto;
+}
+.button-group {
+    margin: 2% auto;
+}
+.project-area .button-group button {
+  /*background: transparent;*/
+  border: none;
+  font: normal 500 16px/130px;
+  text-transform: uppercase;
+  margin: 5px;
+  text-align: center;
+}
+
+
+.project-area .grid .our-project > .title h4 {
+  font: normal 700 25px/12px ;
+}
+
+.project-area .grid .our-project .img a:hover img {
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #ddd);
+}
+
+/* End Project Area*/
+
+/******Footer Section
+
+/* Contact Area*/
+
+#contact {
+  line-height: 3;
+  padding: 7% 10%;
+  background-color: #2e2e2e;
+}
+
+.contact-text {
+  color: whitesmoke;
+  font-family: Ubuntu;
+}
+
+/* Copyright section */
+
+.social-link {
+  margin: 100px auto;
+
+  color: #333;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+
+  color: #2e2e2e;
+  font-size: 15px;
+  margin: 30px auto;
+}
+
+
+
+/* back to top button */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+
+/*Responsive  375x676px*/
+
+@media (max-width: 1024px){
+
+    body {
+        text-align: center;
+    }
+    .whoami {
+        font-size: 30px;
+    }
+    .image-banner {
+        float: none; 
+       
+        padding-top: 3%;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .button-banner {
+        margin-top: 10%;
+    }
+    .wrapper span {
+        
+        font-size : 25px;
+        
+      }
+
+}
+
+
+/*
+768x676px
+#top {
+    text-align: center;
+}
+
+.image-banner {
+        float: right; 
+        width: 40%;
+        height: 300px;
+        position: relative;
+         margin: auto auto; 
+        text-align: center; 
+        padding-top: 3%;
+   }
+
+ #middle {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 7% 10%;
+    text-align: center;
+}
+    #contact {
+        line-height: 3;
+        padding: 7% 10%;
+        background-color: #2e2e2e;
+        text-align: center;
+    }
+
+    */

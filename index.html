@@ -1,81 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabian Sulu - Online Curriculum Vitae</title>
-</head>
-<body>
-    <table cellspacing="20">
-        <tbody>
-            <tr>
-                <td><img src="./images/fabiansulu.png" alt="Fabian Sulu Profil"></td>
-                <td>
-                    <h1>Fabian SULU aka <em>Authentik</em></h1>
-                    <p><em>Founder and CEO of <strong>Mastalog</strong></em></p>
-                    <p>I am an ethical Hacker and Web Developper. I ❤ coffee and gaming</p>
-                </td>
-            </tr>    
-        </tbody>
-    </table>
-    <hr size="2">
-    <h3>Teaching</h3>
-    <ul>
-        <li>+243 Hackers in the deep of Cyber Security</li>
-        <li>Protect your data without beeing IT Expert</li>
-        <li>The dangers of social networks</li>
-    </ul>
-    <hr size="2">
-    <h1>Work Experience</h1>
-    <table>
-        <thead>
-            <tr>
-                <td>Dates</td>
-                <td>Work</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2012 - Now</td>
-                <td>Statistician at the General Commission for Atomic Energy </td>            
-            </tr>
-            <tr>
-                <td>2015 - Now</td>
-                <td>Lead Developper and CEO at Mastalog sarl</td>
-            </tr>
-        </tbody>
-        <tr></tr>
-    </table>
-    <hr size="2">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentik-cv</title>
+    <link rel="icon" href="./images/favicon.ico" />
 
-    <h3>Skills</h3>
-    <table>
-        <tr>
-            <td>Web Developpement</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Programming</td>
-            <td>⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Ethical Testing</td>
-            <td>⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Networking</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Linux</td>
-            <td>⭐⭐⭐⭐</td>
-        </tr>
-    </table>
-    <hr size="2">
-    <a href="./hobbies.html">My Hobbies</a>
-    <a href="./contact.html">Contact Me</a>
-    <a href="http://fabiansulu.com">My Website</a>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
-</body>
+    <!-- Fonts css linked -->
+
+    <link rel="stylesheet" href="./css/fonts.css" />
+
+    <!--Awesome ICon-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!--Magnific popup css -->
+    <link
+      rel="stylesheet"
+      href="./vendor/Magnific-Popup/dist/magnific-popup.css"
+    />
+
+    <!--Caroussel CSS-->
+    <link
+      rel="stylesheet"
+      href="./vendor/owl-carousel/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/owl-carousel/css/owl.theme.default.min.css"
+    />
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Top section -->
+    <section id="top" class="header-area">
+      <div class="main-menu">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand nav-link" href="#">Authentik</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon">Menu</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#skills"
+                    >Compétences</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Moi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projets</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row banner">
+        <div class="col-lg-6">
+                    
+          <h1 class="whoami">
+            Salut, <br />
+            Je suis Fabian...
+          </h1>
+          <h3 class="description">
+            <div class="wrapper">
+              <i class="fa-solid fa-terminal fa-beat fa-1x"></i><span class="multiText"></span>
+            </div>
+          </h3>
+           <br />
+          <div class="button-banner">
+            <!--<button type="button" class="btn-banner btn btn-lg btn-outline-light">Téléchargez mon CV</button>
+            <button type="button" class="btn-banner btn btn-lg btn-dark"  >Restons en contact !</button>
+            -->
+            <a href="https://cd.linkedin.com/in/fabian-sulu"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a href="https://twitter.com/fabiansulu"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+            <a href="https://github.com/fabiansulu"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="./images/authentik.png"
+            class="image-banner"
+            alt="Authentik-Profil"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Middle section -->
+
+    <section id="middle">
+      <!-- Skills area -->
+
+      <div id="#skills">
+        <h2>Mes Compétences</h2>
+        <div class="row row-skills">
+          <div class="col-lg-4 skills-widget">
+            <h3>Développement Web</h3>
+            <i class="icon-skills fa fa-globe fa-3x"></i>
+            <p class="para-skills">
+              Développement des applications et site web. Conception des
+              interfaces utilisateurs ainsi que des parties Back-end (pure
+              coding !).
+            </p>
+          </div>
+          <div class="col-lg-4 skills-widget">
+            <h3>Cyber Sécurité</h3>
+            <i class="icon-skills fa fa-lock fa-3x"></i>
+            <p class="para-skills">
+              La sécurité et la confidentialité des données. L'analyse des
+              failles de sécurité, La sauvegarde et la restauration des données.
+            </p>
+          </div>
+          <div class="col-lg-4 skills-widget">
+            <h3>Formation & Copywriting</h3>
+            <i class="icon-skills fa fa-pencil fa-3x"></i>
+            <p class="para-skills">
+              La conception des contenus de qualité. <br />
+              Les formations en ligne
+              <a href="https://formation.mastalog.com">Ici</a> ou hors-ligne via
+              des conférences et séminaires.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- About me area -->
+
+      <hr />
+
+      <div id="about">
+        <h2>A propos</h2>
+
+        <div class="me-description">
+          <h3>
+            Fabian aka Authenti<span style="text-decoration: underline">k</span>
+          </h3>
+          <p>
+            Je suis Directeur Général de
+            <a href="https://mastalog.com"> Mastalog</a>. <br />
+            Avec plus de 10 ans dans le domaine, j'ai un Back-end assez costaud et qui ne cesse de croître...
+          </p>
+        </div>
+        <div class="webdev">
+          <img
+            src="./images/pexels-pixabay-4158.jpg"
+            alt="image-web-responsive"
+          />
+          <h3>Design et Développement Web</h3>
+          <p class="para-about">
+            Avec plus de 10 ans en tant que FullStack Web Dévéloppeur. <br />
+            Vos projets de développement Web seront entre des bonnes mains.<br />
+            Je maîtrises plusieurs technologies Web et Mobile : HTML, CSS,
+            Javascript (NodeJS, ReactJS), Php (Wordpress), Python (Django).
+          </p>
+        </div>
+        <div class="cs">
+          <img
+            src="./images/pexels-tima-miroshnichenko-5380792.jpg"
+            alt="image-cyber-security"
+          />
+          <h3>Cyber Sécurité</h3>
+          <p class="para-about">
+            J'aurais dû avoir le surnom de Mr Robot quand j'ai commencé mon
+            parcours d' Ethical Hacking en 2010 mes collègues me surnommé
+            "Sorcier". <br />
+            Formé en Hacking Ethique, je mets mes compétences en Cyber Sécurité
+            au service de la protection de données à travers mes
+          </p>
+        </div>
+        <div class="training">
+          <img
+            src="./images/pexels-tima-miroshnichenko-5380792.jpg"
+            alt="image-cyber-security"
+          />
+          <h3>Formation & Copywriting</h3>
+          <p class="para-about">
+            J'aurais dû avoir le surnom de Mr Robot quand j'ai commencé mon
+            parcours d' Ethical Hacking en 2010 mes collègues me surnommé
+            "Sorcier". <br />
+            Formé en Hacking Ethique, je mets mes compétences en Cyber Sécurité
+            au service de la protection de données à travers mes
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div id="projects" class="project-area">
+        <div class="project-title pb-5">
+          <h2 class="text-uppercase title-h1">Projet réalisé récemment</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="button-group">
+            <button type="button" class="active btn btn-dark" id="btn1" data-filter="*">
+              Tous
+            </button>
+            <button type="button" data-filter=".popular" class="btn btn-secondary">
+              Formations
+            </button>
+            <button type="button" data-filter=".latest" class="btn btn-secondary">
+              Site et Application Web
+            </button>
+          </div>
+          <div class="row grid" style="position: relative; height: 1113.85px">
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 element-item latest"
+              style="position: absolute; left: 0px; top: 0px"
+            >
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href="./images/portfolio/p7.png">
+                    <img
+                      src="./images/portfolio/p7.png"
+                      alt="Portfolio-One"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <span class="text-secondary"
+                    >Agence de Fret, Web Dev &amp; Design</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 element-item latest"
+              style="position: absolute; left: 360px; top: 0px"
+            >
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href="./images/portfolio/p4.png">
+                    <img
+                      src="./images/portfolio/p4.png"
+                      alt="Portfolio-One"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <span class="text-secondary"
+                    >Agence Web, Web Dev &amp; Design</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 element-item latest"
+              style="position: absolute; left: 360px; top: 237.175px"
+            >
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href="./images/portfolio/p6.png">
+                    <img
+                      src="./images/portfolio/p6.png"
+                      alt="Portfolio-One"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <span class="text-secondary"
+                    >Livraison colis, Web Dev &amp; Design</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 element-item latest"
+              style="position: absolute; left: 0px; top: 240.712px"
+            >
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href="./images/portfolio/p5.png">
+                    <img
+                      src="./images/portfolio/p5.png"
+                      alt="Portfolio-One"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <span class="text-secondary"
+                    >Cours en ligne, Web Dev &amp; Design</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 element-item popular"
+              style="position: absolute; left: 360px; top: 481.713px"
+            >
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href="./images/portfolio/p2.png">
+                    <img
+                      src="./images/portfolio/p2.png"
+                      alt="Portfolio-Two"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <span class="text-secondary"
+                    >L'Ere du numérique, Livre - Formation</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 element-item popular"
+              style="position: absolute; left: 0px; top: 483.787px"
+            >
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href="./images/portfolio/p3.png">
+                    <img
+                      src="./images/portfolio/p3.png"
+                      alt="Portfolio-Two"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <span class="text-secondary"
+                    >Sécuriser ces données perso, Formatons</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 element-item popular"
+              style="position: absolute; left: 360px; top: 787.2px"
+            >
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href="./images/portfolio/p1.png">
+                    <img
+                      src="./images/portfolio/p1.png"
+                      alt="Portfolio-Two"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <span class="text-secondary">+243Hackers, Formations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom section -->
+
+    <section id="contact">
+      <div class="row footer-row">
+        <div class="col-lg-8">
+          <h2 class="contact-text">Restons en contact</h2>
+          <h3 class="contact-text">
+            Mes compétences et mon expérience à votre service
+          </h3>
+          <p class="contact-text">
+            La qualité de service et le timing de livraison sont mes moteurs de
+            fonctionnement boosté à la Caféine.
+          </p>
+          <a href="mailto:fabiansulu@gmail.com">  
+              <button 
+              type="button"
+              class="btn btn-outline-light btn-lg"
+            >
+              Contactez moi !
+            </button>
+          </a>
+        </div>
+        <div class="col-lg-4 social-link">
+          <a href="https://cd.linkedin.com/in/fabian-sulu"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://twitter.com/fabiansulu"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a href="https://github.com/fabiansulu"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+        </div>
+      </div>
+      
+
+      <!-- BACK TO TOP BUTTON-->
+      <a href="#top">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      </a> 
+    </section>
+
+    <section class="copyright">
+      <p>© 2023 Fabian Sulu aka Authentik -<a href="https://mastalog.com"> Mastalog.</a></p>
+    </section>
+
+  <!-- JQUERY  -->
+  <script src="./js/jquery.3.6.4.js"></script>
+  <!--   Bootstrap JS -->
+
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!--ISOTOP JS-->
+  <script src="./vendor/isotope/isotope.min.js"></script>
+
+  <!--Magnific popup JS-->
+  <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+
+  <!--OWL  Carousel JS-->
+  <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+  <!--Custom JS-->
+  <script src="./js/main.js"></script>
+
+  <script src="./js/type.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".multiText", {
+            strings : [" Dévéloppeur Web", " Hacker Ethique" ," Copywriter", "Formateur", " Entrepreneur"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            startDelay : 1000,   
+            backDelay : 1500
+ });
+    </script>
+
+
+
+    
+  </body>
 </html>
